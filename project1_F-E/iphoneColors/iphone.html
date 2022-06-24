@@ -12,11 +12,10 @@
     
     <div class="container">
         <header>
-            <a href=""><img src="../imgs/ilogo.png" alt="" class="logo"></a>
+            <a href="https://www.apple.com/iphone-13-pro/"><img src="../imgs/ilogo.png" alt="" class="logo"></a>
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Blogger</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://blog.feedspot.com/apple_blogs/">Blogger</a></li>
 
             </ul>
         </header>
@@ -49,11 +48,15 @@
         let Container = document.querySelector('.container')
                     let iphoneColors = function (phone){
                         img.src = phone
+                        window.localStorage.setItem("img",phone)
+                       window.localStorage.getItem(img.src);
                     }
-
+                    window.localStorage.getItem(img.src);
+                    // document.body.style.backgroundColor =   window.localStorage.getItem(img.src);
                     let bgColor = function(Colorr){
-                    document.style.background = Colorr;
+                    Container.style.background = Colorr;
                     }
+       
     </script>
   </body>
 </html>

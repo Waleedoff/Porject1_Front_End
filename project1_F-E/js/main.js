@@ -14,3 +14,6 @@ document.getElementById("gosome").onclick =  () => {
 //     img.src = phone
 // }
 // alert('hi')
+
+// let username = document.querySelector('.input-box').value="username";
+// console.log(username)

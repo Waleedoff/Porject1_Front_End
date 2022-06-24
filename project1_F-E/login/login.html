@@ -11,7 +11,7 @@
                 <h1>Login Here</h1>
                 <div class="input-box">
                     <i class="fa fa-envelope-o"></i>
-                 <input type="email" placeholder="Email Id">   
+                 <input id="username" type="email" placeholder="Email Id" >   
                 </div>
                 <div class="input-box">
                     <i class="fa fa-key"></i>
@@ -21,7 +21,23 @@
                      <i  id='hide1' class="fa fa-eye-slash"></i>
                     </span>
                 </div>
-               <a href="../iphoneColors/iphone.html"> <button class="login">Login</button> </a>
+              <a href="../iphoneColors/iphone.html">  <button type="" class="login">Login</button> </a>
             </div>
+            <script>
+
+                      
+              
+            
+             let btn = document.querySelector('button');
+             btn.onclick = () => {
+            let input = document.getElementById('username').value;
+             console.log(input)
+             window.localStorage.setItem("username",input);
+             window.localStorage.getItem("username")
+             }
+              
+                   
+               
+            </script>
         </body>
 </html>
