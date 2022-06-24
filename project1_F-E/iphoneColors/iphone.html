@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apple</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <a href=""><img src="../imgs/ilogo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Blogger</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>iphone 13 pro max</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Deleniti quidem soluta dolorum atque totam, eaque ipsum
+                      perspiciatis!
+                     Vero magnam sapiente voluptates culpa velit id ab? Ipsum
+                      maxime quasi omnis quia.
+                    </p>
+                    
+            </div>
+            <div class="image">
+                <img class ="img" src="../imgs/iy.png" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <img onmousemove="iphoneColors(this.src); bgColor('#1e1e1')" src="../imgs/ig.png" alt="">
+            <img onmousemove='iphoneColors(this.src); bgColor("#247ec8")' src="../imgs/ib.png" alt="">
+            <img onmousemove="iphoneColors(this.src); bgColor('#c79b53')" src="../imgs/ily.png" alt="">
+            <img onmousemove="iphoneColors(this.src); bgColor('#00000')" src="../imgs/iy.png" alt="">
+            <img onmousemove="iphoneColors(this.src); bgColor('#c82525')" src="../imgs/ir.png" alt="">
+        </div>
+    </div>
+
+    <script>
+         let img = document.querySelector('.img')
+        let Container = document.querySelector('.container')
+                    let iphoneColors = function (phone){
+                        img.src = phone
+                    }
+
+                    let bgColor = function(Colorr){
+                    document.style.background = Colorr;
+                    }
+    </script>
+  </body>
+</html>

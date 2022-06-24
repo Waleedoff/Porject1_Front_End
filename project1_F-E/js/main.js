@@ -4,3 +4,13 @@ document.getElementById("gosome").onclick =  () => {
     window.location = loginPage;
 
 }
+
+
+// iphoneColors js
+
+// let img = document.querySelector('.img');
+
+// let iphoneColors = function (phone){
+//     img.src = phone
+// }
+// alert('hi')
