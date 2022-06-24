@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-image: url("../imgs/a.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    opacity: 1;
+  }
+  .All {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 12% auto;
+    padding: 40px 0;
+    opacity: 1;
+    color: #fff;
+    border-radius: 9px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .input-box {
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .input-box input {
+    outline: none;
+    width: 90%;
+    color: #fff;
+    background: transparent;
+    border: none;
+  }
+  ::placeholder {
+    color: #ccc;
+  }
+  /*Enough*/
+  .fa {
+    margin-right: 10px;
+  }
+  .eye {
+    position: absolute;
+  }
+  #hide {
+    display: none;
+  }
+  .login {
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    font-size: 17px;
+    outline: none;
+    padding: 10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    background: transparent;
+    border-radius: 7px;
+  }
+  .login:hover {
+    background-color: black;
+    transition: 600ms;
+  }
