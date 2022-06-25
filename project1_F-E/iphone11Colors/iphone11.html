@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apple</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="../index.html"><img src="../imgs/ilogo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://blog.feedspot.com/apple_blogs/">Blogger</a></li>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>iphone 11</h2>
+                <p>The iPhone 11 succeeded the iPhone XR, and it features a 6.1-inch LCD display that Apple calls a
+                    "Liquid Retina HD Display." It features a 1792 x 828 resolution at 326ppi, a 1400:1 contrast ratio,
+                    625 nits max brightness, True Tone support for adjusting the white balance to the ambient lighting,
+                    and wide color support
+                </p>
+
+            </div>
+            <div class="image">
+                <img class="img" src="../imgs/11white.png" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <img onmousemove="iphoneColors(this.src); bgColor('darkgrey')" src="../imgs/purple.png" alt="">
+            <img onmousemove='iphoneColors(this.src); bgColor("#247ec8")' src="../imgs/11lightblue.png" alt="">
+            <img onmousemove="iphoneColors(this.src); bgColor('#c79b53')" src="../imgs/11yellow.png" alt="">
+            <img onmousemove="iphoneColors(this.src); bgColor('#000')" src="../imgs/11white.png" alt="">
+            <img onmousemove="iphoneColors(this.src); bgColor('brown')" src="../imgs/11red.png" alt="">
+            <!-- <img onmousemove="iphoneColors(this.src); colors('white')" src="../imgs/white.jpg" alt=""> -->
+        </div>
+    </div>
+
+    <script>
+
+        let img = document.querySelector('.img')
+        let Container = document.querySelector('.container')
+        
+        
+        let iphoneColors =  (phone)  => {
+            img.src = phone
+            window.localStorage.setItem("img", phone)
+            window.localStorage.getItem(img.src);
+        }
+
+
+        
+        let bgColor =  (color) => {
+            Container.style.backgroundColor = color
+        }
+
+        
+    </script>
+</body>
+
+</html>

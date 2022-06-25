@@ -1,0 +1,46 @@
+body {
+    height: 1000px;
+    opacity: 0.8;
+    background-color: black !important;
+  }
+
+  .card {
+    background-color: #000 !important;
+    border: 2px solid white !important;
+    color: bisque !important;
+  }
+
+  .card:hover {
+    /* opacity: 0.3; */
+    font-size: 19px !important;
+    cursor: pointer !important;
+    /* background-color: aliceblue !important; */
+    color: #fff !important;
+    border: 3px solid white !important;
+    transform: scale(1, 1) !important;
+
+  }
+
+  #hreflogin {
+    background-color: #fff;
+    border-radius: 9px !important;
+    font-weight: bold !important;
+    transition: 0.5s !important;
+  }
+
+  #hreflogin:hover {
+    background-color: #fff !important;
+    color: #fff !important;
+    transform: scale(1.1) !important;
+    border: 2px solid white !important;
+  }
+
+  .card-group {
+    display: flex !important;
+    justify-content: space-between !important;
+
+  }
+  /* #carouselExampleSlidesOnly{
+    border: 5px solid white !important;
+
+  } */

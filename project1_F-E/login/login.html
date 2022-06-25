@@ -1,43 +1,38 @@
 <html>
-    <head>
-        <title>FirstDemoApplication</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.main.css"> -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    
-        <body>
-            <div class="All">
-                <h1>Login Here</h1>
-                <div class="input-box">
-                    <i class="fa fa-envelope-o"></i>
-                 <input id="username" type="email" placeholder="Email Id" >   
-                </div>
-                <div class="input-box">
-                    <i class="fa fa-key"></i>
-                    <input type="password" placeholder="Password">
-                    <span class="eye">
-                    <i id='hide' class="fa fa-eye"></i>
-                     <i  id='hide1' class="fa fa-eye-slash"></i>
-                    </span>
-                </div>
-              <a href="../iphoneColors/iphone.html">  <button type="" class="login">Login</button> </a>
-            </div>
-            <script>
 
-                      
-              
-            
-             let btn = document.querySelector('button');
-             btn.onclick = () => {
+<head>
+    <title>FirstDemoApplication</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.main.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="All">
+        <h1>Login Here</h1>
+        <div class="input-box">
+            <i class="fa fa-envelope-o"></i>
+            <input id="username" type="email" placeholder="Email Id">
+        </div>
+        <div class="input-box">
+            <i class="fa fa-key"></i>
+            <input type="password" placeholder="Password">
+            <span class="eye">
+                <i id='hide' class="fa fa-eye"></i>
+                <i id='hide1' class="fa fa-eye-slash"></i>
+            </span>
+        </div>
+        <a href="../iphone13Colors/iphone.html"> <button type="" class="login">Login</button> </a>
+    </div>
+    <script>
+        let btn = document.querySelector('button');
+        btn.onclick = () => {
             let input = document.getElementById('username').value;
-             console.log(input)
-             window.localStorage.setItem("username",input);
-             window.localStorage.getItem("username")
-             }
-              
-                   
-               
-            </script>
-        </body>
+            console.log(input)
+            window.localStorage.setItem("username", input); //key and value set //put
+            window.localStorage.getItem("username") // just write the key,
+        }
+    </script>
+</body>
+
 </html>

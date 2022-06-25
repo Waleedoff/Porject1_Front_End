@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apple</title>
+
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <a href="../index.html"><img src="../imgs/ilogo.png" alt="" class="logo"></a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="https://blog.feedspot.com/apple_blogs/">Blogger</a></li>
+
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2>iphone 13 pro max</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Deleniti quidem soluta dolorum atque totam, eaque ipsum
+                      perspiciatis!
+                     Vero magnam sapiente voluptates culpa velit id ab? Ipsum
+                      maxime quasi omnis quia.
+                    </p>
+                    
+            </div>
+            <div class="image">
+                <img class ="img" src="../imgs/yellow.png" alt="">
+            </div>
+        </div>
+        <div class="icons">
+            <img onmousemove="iphoneColors(this.src); colors('darkgrey')" src="../imgs/grey.png" alt="">
+            <img onmousemove='iphoneColors(this.src); colors("#247ec8")' src="../imgs/lightBlue.png" alt="">
+            <img onmousemove="iphoneColors(this.src); colors('#c79b53')" src="../imgs/lightYellow.png" alt="">
+            <img onmousemove="iphoneColors(this.src); colors('#000')" src="../imgs/yellow.png" alt="">
+            <img onmousemove="iphoneColors(this.src); colors('brown')" src="../imgs/red.png" alt="">
+            <!-- <img onmousemove="iphoneColors(this.src); colors('white')" src="../imgs/white.jpg" alt=""> -->
+        </div>
+    </div>
+
+    <script>
+        let img = document.querySelector('.img')
+        let Container = document.querySelector('.container')  //background of the website iphone.
+        let iphoneColors = function (phone){  // phone ==> is an img source.
+                        img.src = phone
+                        window.localStorage.setItem("img",phone)
+                        window.localStorage.getItem(img.src);
+                    }
+                    window.localStorage.getItem(img.src);
+                    // document.body.style.backgroundColor =   window.localStorage.getItem(img.src);
+                    function  colors(color){
+                    // Container.style.backgroundColor = color;
+                    Container.style.backgroundColor = color
+                    }
+    </script>
+
+
+    <script src="/js/main.js/"></script>
+  </body>
+</html>
